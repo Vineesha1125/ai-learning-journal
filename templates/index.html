@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Learning Journal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧠 AI Learning Journal</h1>
+            <p class="subtitle">Track your learning journey with AI-powered insights</p>
+        </header>
+
+        <!-- Test AI Button -->
+        <div class="test-section">
+            <button id="testAI" class="btn-secondary">Test AI Connection</button>
+            <div id="testResult"></div>
+        </div>
+
+        <!-- Add Note Section -->
+        <div class="add-note-section">
+            <h2>📝 Add Today's Learning</h2>
+            <textarea id="noteInput" placeholder="What did you learn today? (e.g., Learned about Python decorators, understanding how they wrap functions...)" rows="5"></textarea>
+            <button id="addNote" class="btn-primary">Add Note with AI Summary</button>
+            <div id="addResult"></div>
+        </div>
+
+        <!-- AI Insights Section -->
+        <div class="insights-section">
+            <h2>💡 AI Learning Insights</h2>
+            <button id="getInsights" class="btn-primary">Generate AI Insights</button>
+            <div id="insightsResult"></div>
+        </div>
+
+        <!-- Display Notes Section -->
+        <div class="notes-section">
+            <h2>📚 Your Learning Notes</h2>
+            <button id="loadNotes" class="btn-secondary">Load All Notes</button>
+            <div id="notesList"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
