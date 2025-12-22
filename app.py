@@ -133,4 +133,4 @@ def test_ai():
 if __name__ == '__main__':
     print("🚀 Starting AI Learning Journal...")
     print("📝 Open http://localhost:5000 in your browser")
-    app.run(debug=True, port=5000)
+    app.run(debug=False, host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
